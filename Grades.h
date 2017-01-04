@@ -11,13 +11,13 @@ using std::vector;
 
 class Grade
 {
-	private:
-		vector<int> grades;
+private:
+    vector<int> grades;
 
 public:
-	//constructor
-	void addGrade();
-	void changeGrade();
+    //constructor
+    void addGrade();
+    void changeGrade();
 
 };
 
