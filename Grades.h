@@ -18,6 +18,7 @@ public:
     //constructor
     void addGrade();
     void changeGrade();
+	void deleteGrade();
 
 };
 
