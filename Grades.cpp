@@ -1,6 +1,6 @@
 #include "Grades.h"
 
-void grades()
+void Grade::addGrade()
 {
-	return;
+	
 }
