@@ -1,6 +1,9 @@
 # GradeCalculator
 Calculate grades for a class. 
 
-Course class: contain information for a course.
+-Course class: contains information for a course.
+-Grade class: contains information about a grade for any item of type GradeType
+-CourseLoad class: contains ???
+-Category class: contains ???
 
-Grade class: contain information about a grade for any item of type GradeType
+Development Team: Christopher Le, Jason Brownell

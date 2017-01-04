@@ -7,7 +7,12 @@ Contains grade information about a course.
 
 class Course
 {
-	
+private:
+
+protected:
+
+public:
+
 };
 
 #endif

@@ -1,5 +1,5 @@
 /*
-Contains the courseload for a semester.
+Contains the course load for a semester.
 */
 
 #ifndef COURSELOAD_H
@@ -13,6 +13,8 @@ class CourseLoad
 {
 private:
 	vector<Course> courses;
+
+protected:
 
 public:
 

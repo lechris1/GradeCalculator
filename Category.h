@@ -8,7 +8,12 @@ Within each type, a vector of grades are recorded.
 
 class Category
 {
-	
+private:
+
+protected:
+
+public:
+
 };
 
 #endif
