@@ -1,5 +1,5 @@
 /*
-Contains grade information about a course.
+Contains grade information about a course. This class handles the grading scale and allocations.
 */
 
 #ifndef COURSE_H
