@@ -9,8 +9,6 @@ class Course
 {
 private:
 
-protected:
-
 public:
 
 };

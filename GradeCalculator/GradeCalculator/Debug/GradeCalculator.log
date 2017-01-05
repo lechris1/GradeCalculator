@@ -1,0 +1,3 @@
+﻿  main.cpp
+main.obj : error LNK2019: unresolved external symbol "class Grades __cdecl gr(void)" (?gr@@YA?AVGrades@@XZ) referenced in function _main
+D:\Documents\Github\GradeCalculator\GradeCalculator\Debug\GradeCalculator.exe : fatal error LNK1120: 1 unresolved externals

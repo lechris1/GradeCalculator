@@ -10,8 +10,6 @@ class Category
 {
 private:
 
-protected:
-
 public:
 
 };
