@@ -16,7 +16,10 @@ private:
 	vector<Course> courses;
 
 public:
-	//constructor
+	CourseLoad();
+	void addCourse();
+	void deleteCourse();
+
 
 };
 

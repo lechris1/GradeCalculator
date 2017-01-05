@@ -1,6 +1,16 @@
 #include "CourseLoad.h"
 
-void courseload()
+CourseLoad::CourseLoad() //default constructor
 {
-	return;
+
+}
+
+void CourseLoad::addCourse()
+{
+
+}
+
+void CourseLoad::deleteCourse()
+{
+
 }
