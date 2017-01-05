@@ -4,10 +4,12 @@
 #include "Grades.h"
 
 #include<iostream>
-using std::cout; using std::endl;
+using std::cout; using std::cin; using std::endl;
 
 int main()
 {
 	Grades gr();
-	cout << gr;
+	cout << gr <<endl;
+
+	return 0;
 }
