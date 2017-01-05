@@ -8,6 +8,7 @@ Contains grade information about a course. This class handles the grading scale 
 class Course
 {
 private:
+	//use another vector to store and manage the scale allocations?
 
 public:
 

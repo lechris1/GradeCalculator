@@ -2,10 +2,10 @@
 #include<iostream>
 using std::cout; using std::cin; using std::endl; using std::ostream;
 #include<iomanip>
-using std::setw;
+using std::setw; using std::setprecision;
 #include<vector>
 
-Grades::Grades()
+Grades::Grades() //default class object constructor
 {
 	addGrade();
 }
@@ -13,8 +13,9 @@ Grades::Grades()
 //add a new grade
 void Grades::addGrade()
 {
-	int score;
-	cout << "Input score: ('-1' to stop)";
+	int score; //see header file; should we go with double or float instead? We want the precision of the potential decimal points right?
+	
+	cout << "Input score: ('-1' to stop)"; //sentinel-driven input clause/priming-read for loop below
 	cin >> score;
 
 	while (score != -1)
@@ -28,14 +29,28 @@ void Grades::addGrade()
 //change a grade using index
 void Grades::changeGrade()
 {
-	cout << "Which score do you want to change?";
+	double new_score;
+	
+	cout << "\nWhich score do you want to change?"; //do we want lookup by location or vector position?
+	cin >> score_index;
 
+	cout<<"\nWhat do you want the new score to be?":
+	cin >> new_score;
+
+	grades.at(score_index) = new_score;
+
+	cout << "\nScore successfully modified.";
 }
 
 //delete a grade using index
 void Grades::deleteGrade()
 {
-	cout << "Which score do you want to delete?";
+	cout << "\nWhich score do you want to delete?";
+	cin >> score_index;
+
+	grades.erase((grades.begin) + score_index);
+
+	cout << "\nScore successfully deleted.";
 }
 
 /*print grades as:
