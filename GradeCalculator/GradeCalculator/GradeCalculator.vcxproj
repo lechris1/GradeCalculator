@@ -110,20 +110,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Category.h" />
-    <ClInclude Include="..\..\Course.h" />
-    <ClInclude Include="..\..\CourseLoad.h" />
-    <ClInclude Include="..\..\Grades.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\Category.cpp" />
-    <ClCompile Include="..\..\Course.cpp" />
-    <ClCompile Include="..\..\CourseLoad.cpp" />
-    <ClCompile Include="..\..\Grades.cpp" />
     <ClCompile Include="..\..\main.cpp" />
+    <ClCompile Include="..\..\Source Files\Category.cpp" />
+    <ClCompile Include="..\..\Source Files\Course.cpp" />
+    <ClCompile Include="..\..\Source Files\CourseLoad.cpp" />
+    <ClCompile Include="..\..\Source Files\Grades.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Header Files\Category.h" />
+    <ClInclude Include="..\..\Header Files\Course.h" />
+    <ClInclude Include="..\..\Header Files\CourseLoad.h" />
+    <ClInclude Include="..\..\Header Files\Grades.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

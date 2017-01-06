@@ -1,6 +1,4 @@
-﻿  Grades.cpp
+﻿  main.cpp
+  Category.cpp
+d:\documents\github\gradecalculator\source files\category.cpp(15): error C2059: syntax error: '}'
   Generating Code...
-  Skipping... (no relevant changes detected)
-  main.cpp
-  GradeCalculator.vcxproj -> D:\Documents\Github\GradeCalculator\GradeCalculator\Debug\GradeCalculator.exe
-  GradeCalculator.vcxproj -> D:\Documents\Github\GradeCalculator\GradeCalculator\Debug\GradeCalculator.pdb (Partial PDB)
