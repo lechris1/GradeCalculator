@@ -8,6 +8,7 @@ using std::cout; using std::cin; using std::endl;
 
 int main()
 {
+	//do whatever you want
 	Grades gr;
 	cout << gr << endl;
 	gr.changeGrade();
