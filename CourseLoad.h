@@ -5,10 +5,10 @@ Contains the course load for a semester.
 #ifndef COURSELOAD_H
 #define COURSELOAD_H
 
-#include "Course.h"
-
 #include<vector>
 using std::vector;
+
+#include "Course.h"
 
 class CourseLoad
 {
