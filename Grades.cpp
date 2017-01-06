@@ -1,11 +1,9 @@
-#include "Grades.h"
-#include<iostream>
-using std::cout; using std::cin; using std::endl; using std::ostream;
-#include<iomanip>
-using std::setw; using std::setprecision;
 #include<vector>
 
-Grades::Grades() //default class object constructor
+#include "Grades.h"
+
+//default class object constructor
+Grades::Grades()
 {
 	addGrade();
 }
@@ -13,59 +11,67 @@ Grades::Grades() //default class object constructor
 //add a new grade
 void Grades::addGrade()
 {
-	int score; //see header file; should we go with double or float instead? We want the precision of the potential decimal points right?
-	
-	cout << "Input score: ('-1' to stop)"; //sentinel-driven input clause/priming-read for loop below
+	double score;
+
+	cout << "\nInput score: ('-1' to stop) "; //sentinel-driven input clause/priming-read for loop below
 	cin >> score;
 
 	while (score != -1)
 	{
 		grades.push_back(score);
-		cout << "Input score: ('-1' to stop)";
+		cout << "Input score: ('-1' to stop) ";
 		cin >> score;
 	}
+
+	//maybe add way to insert instead of just appending
 }
 
 //change a grade using index
 void Grades::changeGrade()
 {
 	double new_score;
-	
-	cout << "\nWhich score do you want to change?"; //do we want lookup by location or vector position?
+
+	cout << *this << endl;
+	cout << "\nWhich score do you want to change? ";
 	cin >> score_index;
 
-	cout<<"\nWhat do you want the new score to be?":
+	cout << "\nWhat do you want the new score to be? ";
 	cin >> new_score;
 
-	grades.at(score_index) = new_score;
+	grades.at(score_index-1) = new_score;
 
-	cout << "\nScore successfully modified.";
+	cout << "\nScore successfully modified." << endl;
 }
 
 //delete a grade using index
 void Grades::deleteGrade()
 {
-	cout << "\nWhich score do you want to delete?";
+	cout << *this << endl;
+	cout << "\nWhich score do you want to delete? ";
 	cin >> score_index;
 
-	grades.erase((grades.begin) + score_index);
+	grades.erase((grades.begin()) + score_index-1);
 
-	cout << "\nScore successfully deleted.";
+	cout << "\nScore successfully deleted." << endl;
 }
 
 /*print grades as:
-   1   2   3   4   5 ... (index)
-  89  94  84  79 100 ... (score)
+     1     2     3     4     5 ... (index)
+    89    94    84    79   100 ... (score)
 */
+
 ostream& operator<<(ostream& out, Grades g)
 {
-	out << setw(4);
+	out << "\nIndex:";
 	for (unsigned i = 1; i <= g.grades.size(); i++)
 	{
+		out << setw(6);
 		out << i;
 	}
-	for (int score : g.grades)
+	out << endl << "Score:";
+	for (double score : g.grades)
 	{
+		out << setw(6);
 		out << score;
 	}
 	return out;
