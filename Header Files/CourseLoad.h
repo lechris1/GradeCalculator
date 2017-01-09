@@ -13,14 +13,17 @@ using std::vector;
 class CourseLoad
 {
 private:
-	vector<Course> courses;
+	int year_;
+	string semester_;
+	vector<Course> courses_;
 
 public:
 	CourseLoad();
 	void addCourse();
 	void deleteCourse();
-
-
+	//choosing to print courseload instead of allowing operator<< to do it
+	void printCourseLoad();
 };
+
 
 #endif

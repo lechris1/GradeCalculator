@@ -11,13 +11,13 @@ void Grades::addGrade()
 {
 	double score;
 
-	cout << "\nInput score: ('-1' to stop) "; //sentinel-driven input clause/priming-read for loop below
+	cout << "\nInput score: (enter to stop) "; //sentinel-driven input clause/priming-read for loop below
 	cin >> score;
 
-	while (score != -1)
+	while (score != '\n')
 	{
 		grades_.push_back(score);
-		cout << "Input score: ('-1' to stop) ";
+		cout << "Input score: (enter to stop) ";
 		cin >> score;
 	}
 
@@ -31,12 +31,12 @@ void Grades::changeGrade()
 
 	cout << *this << endl;
 	cout << "\nWhich score do you want to change? ";
-	cin >> score_index;
+	cin >> score_index_;
 
 	cout << "\nWhat do you want the new score to be? ";
 	cin >> new_score;
 
-	grades_.at(score_index-1) = new_score;
+	grades_.at(score_index_-1) = new_score;
 
 	cout << "\nScore successfully modified." << endl;
 }
@@ -46,9 +46,9 @@ void Grades::deleteGrade()
 {
 	cout << *this << endl;
 	cout << "\nWhich score do you want to delete? ";
-	cin >> score_index;
+	cin >> score_index_;
 
-	grades_.erase((grades_.begin()) + score_index-1);
+	grades_.erase((grades_.begin()) + score_index_-1);
 
 	cout << "\nScore successfully deleted." << endl;
 }

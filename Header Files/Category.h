@@ -20,10 +20,8 @@ private:
 	Grades grades_;
 
 public:
-	Category();
+	Category(string category);
 	friend ostream& operator<<(ostream& out, Category c);
 };
-
-
 
 #endif

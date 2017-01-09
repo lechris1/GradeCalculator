@@ -1,17 +1,19 @@
 #include "../Header Files/Category.h"
 
-Category::Category()
+//default constructor
+Category::Category(string category)
 {
-	cout << "\nName of Category: ";
-	cin >> category_;
+	category_ = category;
 	cout << "What percentage does it carry for the course? ";
 	cin >> weight_;
 }
 
+//output " category (weight) " then grades
 ostream& operator<<(ostream& out, Category c)
 {
-	cout << c.category_ << endl;
-	cout << 
+	out << c.category_ << " (" << c.weight_ << ")" << endl;
+	out << c.grades_;
+	return out;
 }
 
 

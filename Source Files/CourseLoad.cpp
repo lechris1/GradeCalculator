@@ -2,7 +2,8 @@
 
 CourseLoad::CourseLoad() //default constructor
 {
-
+	cout << "Year: ";
+	addCourse();
 }
 
 void CourseLoad::addCourse()

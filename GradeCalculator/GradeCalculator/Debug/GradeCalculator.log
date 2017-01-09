@@ -1,4 +1,10 @@
-﻿  main.cpp
+﻿  Course.cpp
   Category.cpp
-d:\documents\github\gradecalculator\source files\category.cpp(15): error C2059: syntax error: '}'
   Generating Code...
+  Compiling...
+  main.cpp
+d:\documents\github\gradecalculator\main.cpp(12): error C2512: 'Category': no appropriate default constructor available
+  d:\documents\github\gradecalculator\header files\category.h(16): note: see declaration of 'Category'
+  Generating Code...
+  Skipping... (no relevant changes detected)
+  CourseLoad.cpp
